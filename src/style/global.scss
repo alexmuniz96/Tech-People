@@ -1,0 +1,26 @@
+:root{
+  --purple: #717CFF;
+  --red: #FF5959;
+  --green: #70CE88;
+  --grey: #7D7D7D;
+  --black: #373737;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%; // font padrão 10px
+}
+
+body, input, text-area, button{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  font-weight: 900;
+  font-size: 5.6rem;
+}
