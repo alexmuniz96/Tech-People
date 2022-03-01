@@ -1,0 +1,43 @@
+header{
+  padding: 6rem 0;
+
+  div{
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+      display: flex;
+      gap: 3rem;
+
+      li{
+        font-size: 1.7rem;
+        color: var(--black);
+      }
+    }
+  }
+
+  .logo{
+    width: 200px;
+  }
+}
+
+header.headerActive{
+  height: 9rem;
+  padding: 1rem;
+  background: var(--purple);
+
+  div{
+    ul{
+      li{
+        color: #fff;
+      }
+    }
+  }
+
+  .logo{
+    width: 154px;
+  }
+}

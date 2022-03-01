@@ -1,8 +1,13 @@
+import Header from './components/Header'
 import './style/global.scss'
 
 function App() {
   return (
-    <h1>Inicio do site</h1>
+    <>
+      <Header />
+      <h1>Somos um servidor focado em transição de
+        carreira</h1>
+    </>
   );
 }
 
