@@ -1,12 +1,27 @@
 import './styles.scss'
 import { ReactComponent as Logo } from '../../svgs/tech-people.svg'
+import { useState } from 'react'
 
 export default function Header() {
-  return (
 
-    <header >
+  const [headerChange, setHeaderChange] = useState(false)
+
+  function changeHeader() {
+    if (window.scrollY >= 80) {
+      setHeaderChange(true)
+    } else {
+      setHeaderChange(false)
+    }
+  };
+
+  window.addEventListener('scroll', changeHeader);
+
+  return (
+    <header
+      className={headerChange ? 'headerScrollActive' : ''}
+    >
       <div>
-        <Logo className='logo' width={232} height={75} />
+        <Logo className='logo' fill={headerChange ? 'white' : 'black'} />
         <nav>
           <ul>
             <li><a>Home</a> </li>
