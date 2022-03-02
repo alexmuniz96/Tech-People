@@ -32,6 +32,7 @@ header{
     width: 100%;
     background: var(--purple);
     transition:  0.2s linear;
+    z-index: 100;
 
     li{
       color: #fff

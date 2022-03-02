@@ -1,5 +1,6 @@
 :root{
   --purple: #717CFF;
+  --dark-purple:#4654FD;
   --red: #FF5959;
   --green: #70CE88;
   --grey: #7D7D7D;
@@ -20,14 +21,76 @@ html{
 
 body{
   margin: 0 auto;
-  height: 2000px;
 }
 
 body, input, text-area, button{
   font-family: 'Roboto', sans-serif;
 }
 
-h1{
-  font-weight: 900;
-  font-size: 5.6rem;
+button{
+  cursor: pointer;
+}
+
+main{
+  max-width: 1120px;
+  margin: 0 auto;
+
+  section.banner{
+    display: flex;
+    height: calc(100vh - 50px);
+    
+    .content{
+      margin: 6rem 0 ;
+
+     h1{
+      font-weight: 900;
+      font-size: 5.6rem;
+      line-height: 6.6rem;
+
+        span{
+          color: var(--purple);
+        }
+     }
+
+     p{
+       font-size: 2.2rem;
+       font-weight: 500;
+       line-height: 3.8rem;
+       color: var(--grey);
+       padding: 3rem 0;
+     }
+
+     button{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      background: var(--purple);
+      border: none;
+      border-radius: 11px;
+      padding: 1.5rem;
+      width: 26.2rem ;
+      font-size: 2.2rem;
+
+      &:hover{
+        background: var(--dark-purple);
+      }
+     }
+    }
+    .imagesBanner{
+
+      .ball-purple{
+        background: linear-gradient(189.79deg, #8471FF 8.03%, #717CFF 53.55%);
+        mix-blend-mode: normal;
+        opacity: 0.7;
+        position:absolute;
+        width: 1030px;
+        height: 581px;
+        clip-path: ellipse(50% 40% at 50% 50%);
+        margin-top: -510px;
+        margin-left: 50px;
+        z-index: -999;
+      }
+    }
+  }
 }
