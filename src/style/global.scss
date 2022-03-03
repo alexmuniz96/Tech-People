@@ -93,4 +93,56 @@ main{
       }
     }
   }
+
+  section.features{
+    width: 100%;
+    background: #fff;
+
+    header{
+      margin: 0 auto;
+      text-align: center;
+      
+
+        h2{
+          font-size: 3.7rem ;
+          line-height: 5.4rem;
+        }
+
+        p{
+          font-size: 2.2rem;
+          line-height: 3.8rem;
+          color: var(--grey)
+        }
+    }
+
+    div.cardContainer{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      div.card{
+        margin: 30px 0;
+        padding: 30px;
+        max-width: 344px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+
+        span{
+          font-size: 4rem;
+          background: var(--purple);
+          border-radius: 50%;
+        }
+
+        h3{
+          font-size: 2.5rem;
+          margin-top: 3.0rem;
+        }
+
+        p{
+          font-size: 1.6rem;
+          line-height: 2.8rem;
+          color: var(--grey);
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
 }

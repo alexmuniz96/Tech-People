@@ -1,6 +1,10 @@
 import Header from './components/Header'
-import { ReactComponent as ArrowDown } from './svgs/arrow-down.svg'
 import girlStudent from './images/garota-estudante-sorrindo.png'
+
+import { ReactComponent as ArrowDown } from './svgs/arrow-down.svg'
+import { ReactComponent as Star } from './svgs/star.svg'
+import { ReactComponent as School } from './svgs/school.svg'
+import { ReactComponent as PlaylistCheck } from './svgs/playlist_check.svg'
 import './style/global.scss'
 
 function App() {
@@ -8,6 +12,7 @@ function App() {
     <>
       <Header />
       <main>
+
         <section className='banner'>
           <div className='content'>
             <h1>Somos um servidor <span>focado em transição de </span> carreira</h1>
@@ -20,6 +25,47 @@ function App() {
             <div className='ball-purple'></div>
           </div>
         </section>
+
+        <section className='features'>
+          <header>
+            <h2> Nosso compromisso</h2>
+            <p>Temos um compromisso de fazer desafios e gerar avaliações precisas para que você saiba o quanto está evoluíndo. Acreditamos que você merece uma avaliação justa e precisa do seu processo.</p>
+          </header>
+
+          <div className='cardContainer'>
+            <div className='card'>
+              <span> <Star /> </span>
+              <h3>Avaliar positivamente</h3>
+              <p>Entendemos que você está aprendendo. A gente também passou por esta fase, e sabemos que as coisas mudam muito rápido.</p>
+            </div>
+            <div className='card'>
+              <span> <School /></span>
+              <h3>Apoio pós-desafio</h3>
+              <p>Você saberá como está evoluindo, e nós aprendemos a deixar o nosso processo avaliativo mais seguro e de confiança.</p>
+            </div>
+            <div className='card'>
+              <span> <PlaylistCheck /> </span>
+              <h3>Avaliar o que faz sentido</h3>
+              <p>Nada de algoritmo de número primo ou de árvore binária. Nossos desafios se basearam no que você irá realmente trabalhar no futuro.</p>
+            </div>
+            <div className='card'>
+              <span> <Star /> </span>
+              <h3>Avaliar positivamente</h3>
+              <p>Entendemos que você está aprendendo. A gente também passou por esta fase, e sabemos que as coisas mudam muito rápido.</p>
+            </div>
+            <div className='card'>
+              <span> <School /></span>
+              <h3>Apoio pós-desafio</h3>
+              <p>Você saberá como está evoluindo, e nós aprendemos a deixar o nosso processo avaliativo mais seguro e de confiança.</p>
+            </div>
+            <div className='card'>
+              <span> <PlaylistCheck /> </span>
+              <h3>Avaliar o que faz sentido</h3>
+              <p>Nada de algoritmo de número primo ou de árvore binária. Nossos desafios se basearam no que você irá realmente trabalhar no futuro.</p>
+            </div>
+          </div>
+        </section>
+
       </main>
     </>
   );
