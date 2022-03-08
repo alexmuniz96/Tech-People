@@ -34,12 +34,16 @@ button{
   cursor: pointer;
 }
 
+section{
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
 main{
   // max-width: 1120px;
   // margin: 0 auto;
 
   section.banner{
-    max-width: 1120px;
     margin: 0 auto;
     display: flex;
     height: calc(100vh - 50px);
@@ -105,7 +109,6 @@ main{
     background: #fff;
 
     div.backgroundHeader{
-      max-width: 1120px;
       margin: -30px auto 0 auto;
       transform: skewY(-5deg);
       text-align: center;
@@ -129,8 +132,6 @@ main{
     }
 
     div.cardContainer{
-
-      max-width: 1120px;
       margin: 50px auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -197,4 +198,11 @@ main{
       }
     }
   }
+
+  section.news{
+    background: #FAFAFA;
+    max-width: 100%;
+  }
+
+
 }

@@ -9,6 +9,7 @@ import { ReactComponent as Toys } from './svgs/toys.svg'
 import { ReactComponent as TimerOff } from './svgs/timer_off.svg'
 import { ReactComponent as Work } from './svgs/work.svg'
 import './style/global.scss'
+import News from './components/News'
 
 function App() {
   return (
@@ -69,6 +70,10 @@ function App() {
               <p>Nada de algoritmo de número primo ou de árvore binária. Nossos desafios se basearam no que você irá realmente trabalhar no futuro.</p>
             </div>
           </div>
+        </section>
+
+        <section className='news'>
+          <News />
         </section>
 
       </main>

@@ -1,0 +1,42 @@
+import newsOne from '../../images/news-1.png'
+import newsTwo from '../../images/news-2.png'
+import newsThree from '../../images/news-3.png'
+import { ReactComponent as Calendar } from '../../svgs/calendar.svg'
+
+import styles from './styles.scss'
+
+export default function News() {
+
+  return (
+    <>
+      <div className='newsContainer'>
+        <header>
+          <h2>Noticías</h2>
+          <p>Listamos abaixo algumas notícias de tecnologia que nos motivam a estar ativos <br /> diariamente neste nosso projeto.</p>
+        </header>
+
+        <div className="containerNews">
+
+          <div className="cardNews">
+            <img src={newsOne} />
+            <time> <Calendar /> Icon 17 Abr 2020</time>
+            <p>Participe da nossa Live sobre React e testes TDD</p>
+          </div>
+
+          <div className="cardNews">
+            <img src={newsTwo} />
+            <time> <Calendar /> Icon 17 Abr 2020</time>
+            <p>Participe da nossa live de Nuxt para a Turing</p>
+          </div>
+
+          <div className="cardNews">
+            <img src={newsThree} />
+            <time> <Calendar /> Icon 17 Abr 2020</time>
+            <p>Como apoiar uma desenvolvedora em início de carreira?</p>
+          </div>
+
+        </div>
+      </div>
+    </>
+  )
+}
