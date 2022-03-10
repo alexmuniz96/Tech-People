@@ -25,7 +25,7 @@ export default function Schedule() {
           pagination={{
             el: '.my-custom-pagination-div',
             clickable: true,
-            renderBullet: (className) => {
+            renderBullet: (index, className) => {
               return '<span class="' + className + '">' + "</span>";
             },
           }}
@@ -109,13 +109,33 @@ export default function Schedule() {
               </div>
             </div>
           </SwiperSlide>
-          <div class="my-custom-pagination-div" />
+
+          <SwiperSlide>
+            <div className="cardSchedule">
+              <div>
+                <div className='date'>
+                  <span> 20 </span>
+                  <span>Jan</span>
+                </div>
+                <h3>Live: Iniciando com Nuxt por Mateus Ávila Isidoro</h3>
+              </div>
+              <p>
+                Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. Iure et consectetur
+              </p>
+              <div className='containerButton'>
+                <button>Participar  <ArrowRight /> </button>
+                <time> <Time /> 19:00 - 22:00  </time>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <div className='containerPagination'>
+            <div class="my-custom-pagination-div" />
+          </div>
+
         </Swiper>
 
-
-
-
-      </div>
+      </div >
     </>
   )
 }
