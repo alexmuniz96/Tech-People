@@ -1,4 +1,7 @@
 import Header from './components/Header'
+import News from './components/News'
+import Schedule from './components/Schedule'
+
 import girlStudent from './images/garota-estudante-sorrindo.png'
 
 import { ReactComponent as ArrowDown } from './svgs/arrow-down.svg'
@@ -9,8 +12,6 @@ import { ReactComponent as Toys } from './svgs/toys.svg'
 import { ReactComponent as TimerOff } from './svgs/timer_off.svg'
 import { ReactComponent as Work } from './svgs/work.svg'
 import './style/global.scss'
-import News from './components/News'
-import Schedule from './components/Schedule'
 
 function App() {
   return (

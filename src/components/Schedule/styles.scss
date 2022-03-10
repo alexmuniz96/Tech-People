@@ -15,9 +15,6 @@ header{
 }
 
 div.containerSchedule{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 45px;
 
   div.cardSchedule{
     box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
@@ -27,7 +24,7 @@ div.containerSchedule{
       display: flex;
       align-items: center;
 
-      div{
+      div.date{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -57,4 +54,33 @@ div.containerSchedule{
     margin: 25px 0;
   }
 
+  div.containerButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button{
+      background: none;
+      border: none;
+      font-size: 1.7rem;
+      color: var(--purple);
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+    }
+
+    time{
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: (--black);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--purple) !important;
+  }
 }
