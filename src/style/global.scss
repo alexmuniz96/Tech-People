@@ -8,6 +8,7 @@
   --green2:#27AE60;
   --grey: #7D7D7D;
   --black: #373737;
+  --white:#FAFAFA
 }
 
 *{
@@ -23,7 +24,7 @@ html{
 }
 
 body{
-  margin: 0 auto;
+  margin-inline: 0 auto;
 }
 
 body, input, text-area, button{
@@ -36,7 +37,7 @@ button{
 
 section{
   max-width: 1120px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 main{
@@ -44,7 +45,7 @@ main{
   // margin: 0 auto;
 
   section.banner{
-    margin: 0 auto;
+    margin-inline: auto;
     display: flex;
     height: calc(100vh - 50px);
     
@@ -200,14 +201,23 @@ main{
   }
 
   section.news{
-    background: #FAFAFA;
+    background: var(--white);
     max-width: 100%;
   }
 
   section.schedule{
     max-width: 1120px;
-    margin: 0 auto;
+    margin-inline: auto;
+
+    .swiper-pagination-bullet-active{ 
+      background: var(--purple); // cor da navegação do slider
+    }  
   }
 
-
+  section.form{
+    background: var(--white);
+    max-width: 100%;
+    margin: 80px 0;
+  }
+ 
 }

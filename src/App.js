@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import News from './components/News'
 import Schedule from './components/Schedule'
+import Form from './components/Form'
 
 import girlStudent from './images/garota-estudante-sorrindo.png'
 
@@ -80,6 +81,10 @@ function App() {
 
         <section className='schedule'>
           <Schedule />
+        </section>
+
+        <section className='form'>
+          <Form />
         </section>
 
       </main>
