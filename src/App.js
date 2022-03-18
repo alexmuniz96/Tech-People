@@ -2,6 +2,7 @@ import Header from './components/Header'
 import News from './components/News'
 import Schedule from './components/Schedule'
 import Form from './components/Form'
+import Footer from './components/Footer'
 
 import girlStudent from './images/garota-estudante-sorrindo.png'
 
@@ -85,6 +86,10 @@ function App() {
 
         <section className='form'>
           <Form />
+        </section>
+
+        <section className='footer'>
+          <Footer />
         </section>
 
       </main>

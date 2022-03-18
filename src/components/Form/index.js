@@ -1,5 +1,8 @@
 import styles from './styles.module.scss'
 
+import { ReactComponent as ArrowRight } from '../../svgs/arrow-right.svg'
+
+
 export default function Form() {
   return (
     <div className={styles.formContainer}>
@@ -12,6 +15,7 @@ export default function Form() {
         <input type="text" id="nome" placeholder="Nome Completo" />
         <input type="email" id="email" placeholder="Email" />
         <input type="phone" id="phone" placeholder="Telefone Celular" />
+        <button> Cadastre-se <ArrowRight /></button>
       </form>
     </div>
   )

@@ -1,0 +1,25 @@
+.footerContainer{
+  max-width: 1120px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+
+  .contentFooter{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    p{
+      color: #fff;
+      font-size: 1.8rem;
+    }
+  }
+
+  .social{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+}
