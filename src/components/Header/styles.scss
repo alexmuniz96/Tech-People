@@ -4,11 +4,24 @@ header{
 
   div{
     max-width: 1120px;
-    margin: 0 auto;
+    margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    div.logoContainer{
+      display: flex;
+      margin: 0;
+
+      .logo{
+        width: 200px;
+      }
+
+      button {
+        display: none;
+      }
+    }
+    
     ul{
       display: flex;
       gap: 3rem;
@@ -20,9 +33,7 @@ header{
     }
   }
 
-  .logo{
-    width: 200px;
-  }
+ 
 
   &.headerScrollActive{
     height: 9rem;
@@ -42,5 +53,43 @@ header{
       width: 154px;
     }
   }
+}
+
+//Responsive - Tablets
+
+@media (max-width: 768px){
+
+  header{
+    background: var(--purple);
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    
+    div{
+      padding: 0 10px;
+      flex-direction: column;
+
+      div.logoContainer{
+        flex-direction: initial;
+        gap: 200px;
+        button{
+          display: block;
+         }
+      }
+
+      nav{
+        display: none;
+        padding: 40px 0;
+        ul{
+          flex-direction: column;
+        }
+
+         &.active{
+           display: initial;
+         }
+      }
+    }
+  }
+  
 }
 
