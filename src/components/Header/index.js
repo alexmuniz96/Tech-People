@@ -12,7 +12,7 @@ export default function Header() {
   }
 
   function changeHeader() {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 50 & window.innerWidth > 768) {
       setHeaderChange(true)
     } else {
       setHeaderChange(false)
@@ -30,8 +30,8 @@ export default function Header() {
         <div className='logoContainer'>
           <Logo className='logo' fill={headerChange ? 'white' : 'black'} />
 
-          <button onClick={handleNav}>
-            <span className='hamburguer'> Menu </span>
+          <button className={isNavVisible ? 'active' : ''} onClick={handleNav}>
+            <span className='hamburguer'> </span>
           </button>
         </div>
 

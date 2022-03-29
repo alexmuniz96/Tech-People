@@ -29,6 +29,11 @@ header{
       li{
         font-size: 1.7rem;
         color: var(--black);
+        padding: 20px 0;
+
+        &:hover{
+         color: var(--purple);
+        }
       }
     }
   }
@@ -46,7 +51,11 @@ header{
     z-index: 100;
 
     li{
-      color: #fff
+      color: #fff;
+
+      &:hover{
+        color: #FFFD57;
+       }
     }
 
     .logo{
@@ -71,10 +80,55 @@ header{
 
       div.logoContainer{
         flex-direction: initial;
-        gap: 200px;
+        gap: 300px;
+
         button{
-          display: block;
+          display: flex;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          border: none;
+          background: none;
+          cursor: pointer;
+          gap: 0.5rem;
+
+          span.hamburguer{       
+            content: '';
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: currentColor;
+          }
+
+          span.hamburguer::after,
+          span.hamburguer::before{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: currentColor;
+            }
+
+          span.hamburguer::after{
+            margin-top: 3px;
+          }
+          span.hamburguer::before{
+            margin-top: 5px;
+          }
          }
+
+        button.active{
+
+          span.hamburguer{
+            background: transparent;
+          }
+          span.hamburguer::before{
+            transform: rotate(135deg);
+          }
+          span.hamburguer::after{
+            transform: rotate(-135deg);
+            margin-top: -2px;
+          }
+        } 
       }
 
       nav{
@@ -82,6 +136,10 @@ header{
         padding: 40px 0;
         ul{
           flex-direction: column;
+
+          li:hover{
+            color: #fff;
+          }
         }
 
          &.active{
@@ -90,6 +148,5 @@ header{
       }
     }
   }
-  
 }
 
