@@ -11,12 +11,12 @@ import { ReactComponent as Time } from '../../svgs/time.svg'
 export default function Schedule() {
   return (
     <>
-      <header className={styles.headerContainer}>
+      <div className={styles.titleSchedule}>
         <h2>Anota ai na nossa agenda</h2>
         <p>
           Temos um monte de eventos que estamos criando no nosso servidor. Fique de olho que sempre <br /> tem coisa boa!
         </p>
-      </header>
+      </div>
 
       <div className={styles.containerSchedule}>
 

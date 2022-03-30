@@ -10,10 +10,10 @@ export default function News() {
   return (
     <>
       <div className={styles.newsContainer}>
-        <header>
+        <div className={styles.newsTitle}>
           <h2>Noticías</h2>
           <p>Listamos abaixo algumas notícias de tecnologia que nos motivam a estar ativos <br /> diariamente neste nosso projeto.</p>
-        </header>
+        </div>
 
         <div className={styles.containerNews}>
 

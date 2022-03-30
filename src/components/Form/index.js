@@ -6,10 +6,10 @@ import { ReactComponent as ArrowRight } from '../../svgs/arrow-right.svg'
 export default function Form() {
   return (
     <div className={styles.formContainer}>
-      <header>
+      <div className={styles.formTitle}>
         <h2>Preparado para fazer parte da nossa iniciativa?</h2>
         <p>Preencha todos os campos para que possamos entrar em contato.</p>
-      </header>
+      </div>
 
       <form action="post">
         <input type="text" id="nome" placeholder="Nome Completo" />

@@ -107,19 +107,20 @@ main{
 
   section.features{
     width: 100%;
-    background: #fff;
+    // background: #fff;
 
-    div.backgroundHeader{
+    div.backgroundFeatures{
       margin: -30px auto 0 auto;
       transform: skewY(-5deg);
       text-align: center;
       background: #fff;
       z-index: -2;
 
-      header{
+      div.featuresTitle{
       transform: skewY(5deg);
 
           h2{
+            padding-top: 30px;
             font-size: 3.7rem ;
             line-height: 5.4rem;
           }
@@ -231,6 +232,10 @@ main{
 
 @media(max-width: 768px){
   main{
+
+    header{
+      background: initial;
+    }
     max-width: 560px;
     padding: 0 10px;
     margin-inline: auto;
@@ -247,5 +252,6 @@ main{
         display: block;
       }
     }
+    
   }
 }

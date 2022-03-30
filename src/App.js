@@ -35,11 +35,11 @@ function App() {
         </section>
 
         <section className='features'>
-          <div className='backgroundHeader'>
-            <header>
+          <div className='backgroundFeatures'>
+            <div className='featuresTitle'>
               <h2> Nosso compromisso</h2>
               <p>Temos um compromisso de fazer desafios e gerar avaliações precisas para que você saiba o quanto está evoluíndo. Acreditamos que você merece uma avaliação justa e precisa do seu processo.</p>
-            </header>
+            </div>
           </div>
 
           <div className='cardContainer'>
