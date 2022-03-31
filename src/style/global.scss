@@ -1,17 +1,17 @@
-:root{
+:root {
   --purple: #717CFF;
-  --dark-purple:#4654FD;
-  --blue:#5C96FF;
+  --dark-purple: #4654FD;
+  --blue: #5C96FF;
   --red: #FF5959;
-  --orange:#FA706C;
+  --orange: #FA706C;
   --green: #70CE88;
-  --green2:#27AE60;
+  --green2: #27AE60;
   --grey: #7D7D7D;
   --black: #373737;
-  --white:#FAFAFA
+  --white: #FAFAFA
 }
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,81 +19,84 @@
   text-decoration: none;
 }
 
-html{
+html {
   font-size: 62.5%; // font padrão 10px
 }
 
-body{
+body {
   margin-inline: 0 auto;
 }
 
-body, input, text-area, button{
+body,
+input,
+text-area,
+button {
   font-family: 'Roboto', sans-serif;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-section{
+section {
   max-width: 1120px;
   margin-inline: auto;
 }
 
-main{
-  // max-width: 1120px;
-  // margin: 0 auto;
+main {
 
-  section.banner{
+  section.banner {
+    padding: 0 20px;
     margin-inline: auto;
     display: flex;
     height: calc(100vh - 50px);
-    
-    .content{
-      margin: 6rem 0 ;
 
-     h1{
-      font-weight: 900;
-      font-size: 5.6rem;
-      line-height: 6.6rem;
+    .content {
+      margin: 6rem 0;
 
-        span{
+      h1 {
+        font-weight: 900;
+        font-size: 5.6rem;
+        line-height: 6.6rem;
+
+        span {
           color: var(--purple);
         }
-     }
-
-     p{
-       font-size: 2.2rem;
-       font-weight: 500;
-       line-height: 3.8rem;
-       color: var(--grey);
-       padding: 3rem 0;
-     }
-
-     button{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      color: #fff;
-      background: var(--purple);
-      border: none;
-      border-radius: 11px;
-      padding: 1.5rem;
-      width: 26.2rem ;
-      font-size: 2.2rem;
-
-      &:hover{
-        background: var(--dark-purple);
       }
-     }
-    }
-    .imagesBanner{
 
-      .ball-purple{
+      p {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 3.8rem;
+        color: var(--grey);
+        padding: 3rem 0;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        background: var(--purple);
+        border: none;
+        border-radius: 11px;
+        padding: 1.5rem;
+        width: 26.2rem;
+        font-size: 2.2rem;
+
+        &:hover {
+          background: var(--dark-purple);
+        }
+      }
+    }
+
+    .imagesBanner {
+
+      .ball-purple {
         background: linear-gradient(189.79deg, #8471FF 8.03%, #717CFF 53.55%);
         mix-blend-mode: normal;
         opacity: 0.7;
-        position:absolute;
+        position: absolute;
         width: 500px;
         height: 500px;
         clip-path: ellipse(50% 40% at 50% 50%);
@@ -105,53 +108,54 @@ main{
     }
   }
 
-  section.features{
+  section.features {
+    padding: 0 20px;
     width: 100%;
     // background: #fff;
 
-    div.backgroundFeatures{
+    div.backgroundFeatures {
       margin: -30px auto 0 auto;
       transform: skewY(-5deg);
       text-align: center;
       background: #fff;
       z-index: -2;
 
-      div.featuresTitle{
-      padding: 6rem 0 1rem 0;
-      transform: skewY(5deg);
+      div.featuresTitle {
+        padding: 6rem 0 1rem 0;
+        transform: skewY(5deg);
 
-          h2{
-            font-size: 3.7rem ;
-            line-height: 5.4rem;
-          }
-  
-          p{
-            font-size: 2.2rem;
-            line-height: 3.8rem;
-            color: var(--grey)
-          }
+        h2 {
+          font-size: 3.7rem;
+          line-height: 5.4rem;
+        }
+
+        p {
+          font-size: 2.2rem;
+          line-height: 3.8rem;
+          color: var(--grey)
+        }
       }
     }
 
-    div.cardContainer{
+    div.cardContainer {
       margin: 50px auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       z-index: 2;
 
-      div.card{
+      div.card {
         margin: 30px 0;
         padding: 30px;
         max-width: 344px;
         border-radius: 15px;
         box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.05);
 
-        span{
+        span {
           display: flex;
           justify-content: flex-start;
           align-items: center;
 
-          &::before{
+          &::before {
             content: '';
             display: block;
             width: 76px;
@@ -161,37 +165,37 @@ main{
             margin-right: -62px;
           }
 
-          &.star::before{
+          &.star::before {
             color: var(--purple);
           }
-          
-          &.playlistSchool::before{
+
+          &.playlistSchool::before {
             color: var(--red);
           }
 
-          &.playlistCheck::before{
+          &.playlistCheck::before {
             color: var(--orange);
           }
 
-          &.toys::before{
+          &.toys::before {
             color: var(--blue);
           }
 
-          &.work::before{
+          &.work::before {
             color: var(--green2);
           }
 
-          &.timerOff::before{
+          &.timerOff::before {
             color: var(--orange);
           }
         }
 
-        h3{
+        h3 {
           font-size: 2.5rem;
           margin-top: 3.0rem;
         }
 
-        p{
+        p {
           font-size: 1.6rem;
           line-height: 2.8rem;
           color: var(--grey);
@@ -201,81 +205,86 @@ main{
     }
   }
 
-  section.news{
+  section.news {
+    padding: 0 20px;
     background: var(--white);
     max-width: 100%;
   }
 
-  section.schedule{
+  section.schedule {
+    padding: 0 20px;
     max-width: 1120px;
     margin-inline: auto;
 
-    .swiper-pagination-bullet-active{ 
+    .swiper-pagination-bullet-active {
       background: var(--purple); // cor da navegação do slider
-    }  
+    }
+
   }
 
-  section.form{
+
+  section.form {
+    padding: 0 20px;
     background: var(--white);
     max-width: 100%;
     margin: 80px 0;
   }
 
-  section.footer{
+  section.footer {
+    padding: 0 20px;
     background: var(--purple);
     max-width: 100%;
   }
- 
+
 }
 
 // Responsive Table 768px
 
-@media(max-width: 768px){
-  main{
+@media(max-width: 768px) {
+  main {
 
     padding: 0 10px;
     margin-inline: auto;
 
-    section.banner{
+    section.banner {
       max-width: 560px;
 
       flex-direction: column;
       height: auto;
 
-      div.content{
+      div.content {
         margin: 13rem 0 6rem 0;
       }
 
-      div.imagesBanner{
+      div.imagesBanner {
         display: block;
       }
     }
 
-    section.features{
+    section.features {
       max-width: 560px;
 
-      div.cardContainer{
+      div.cardContainer {
         margin: 60px 0 50px 0;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
 
-        div.card{
+        div.card {
           margin: 0;
           padding: 20px;
-          
-          h3{
+
+          h3 {
             font-size: 2rem;
           }
-          p{
+
+          p {
             font-size: 1.4rem;
           }
         }
       }
     }
 
-    section.news{
+    section.news {}
 
-    }
-    
   }
 }

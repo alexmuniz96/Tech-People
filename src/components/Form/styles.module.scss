@@ -1,16 +1,16 @@
-.formContainer{
+.formContainer {
   max-width: 1120px;
   margin-inline: auto;
 
-  .formTitle{
+  .formTitle {
     padding: 6rem 0;
-    
-    h2{
+
+    h2 {
       font-size: 3.7rem;
       color: var(--black);
     }
 
-    p{
+    p {
       font-size: 1.8rem;
       margin-top: 14px;
       color: var(--grey);
@@ -18,11 +18,11 @@
     }
   }
 
-  form{
+  form {
     display: flex;
     gap: 20px;
 
-    input{
+    input {
       border-radius: 8px;
       border: 1px solid #DEDEDE;
       padding: 22px;
@@ -31,7 +31,7 @@
       color: rgba(55, 71, 79, 0.5);
     }
 
-    button{
+    button {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -42,6 +42,18 @@
       width: 262px;
       padding: 12px 0;
       color: #fff;
+    }
+  }
+}
+
+// Responsive Table 768px
+@media(max-width: 768px) {
+  .formContainer {
+    max-width: 560px;
+
+    form {
+      flex-direction: column;
+      max-width: 500px;
     }
   }
 }

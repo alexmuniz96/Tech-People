@@ -1,4 +1,4 @@
-.footerContainer{
+.footerContainer {
   max-width: 1120px;
   margin-inline: auto;
   display: flex;
@@ -6,20 +6,27 @@
   align-items: center;
   padding: 60px 0;
 
-  .contentFooter{
+  .contentFooter {
     display: flex;
     align-items: center;
     gap: 50px;
 
-    p{
+    p {
       color: #fff;
       font-size: 1.8rem;
     }
   }
 
-  .social{
+  .social {
     display: flex;
     align-items: center;
     gap: 28px;
+  }
+}
+
+// Responsive Table 768px
+@media(max-width: 768px) {
+  .footerContainer {
+    max-width: 560px;
   }
 }

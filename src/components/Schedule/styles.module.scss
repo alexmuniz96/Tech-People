@@ -93,3 +93,15 @@
 
   }
 }
+
+@media(max-width: 768px) {
+
+  .titleSchedule {
+    max-width: 560px;
+  }
+
+  .containerSchedule {
+    max-width: 560px;
+    margin-inline: auto;
+  }
+}
