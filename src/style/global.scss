@@ -233,11 +233,12 @@ main{
 @media(max-width: 768px){
   main{
 
-    max-width: 560px;
     padding: 0 10px;
     margin-inline: auto;
 
     section.banner{
+      max-width: 560px;
+
       flex-direction: column;
       height: auto;
 
@@ -251,6 +252,7 @@ main{
     }
 
     section.features{
+      max-width: 560px;
 
       div.cardContainer{
         margin: 60px 0 50px 0;
@@ -269,6 +271,10 @@ main{
           }
         }
       }
+    }
+
+    section.news{
+
     }
     
   }
