@@ -20,6 +20,7 @@
 
   form {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 
     input {
@@ -46,13 +47,23 @@
   }
 }
 
+@media(max-width: 856px) {
+  .formContainer {
+
+    form {
+      flex-direction: column;
+    }
+  }
+}
+
+
 // Responsive Table 768px
 @media(max-width: 768px) {
   .formContainer {
     max-width: 560px;
 
     form {
-      flex-direction: column;
+
       max-width: 500px;
     }
   }

@@ -1,19 +1,20 @@
-header{
+header {
   padding: 6rem 0;
   transition: 0.2s;
 
-  div{
+  div {
+    padding: 0 1rem;
     max-width: 1120px;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    div.logoContainer{
+    div.logoContainer {
       display: flex;
       margin: 0;
 
-      .logo{
+      .logo {
         width: 200px;
       }
 
@@ -21,44 +22,44 @@ header{
         display: none;
       }
     }
-    
-    ul{
+
+    ul {
       display: flex;
       gap: 3rem;
 
-      li{
+      li {
         font-size: 1.7rem;
         color: var(--black);
         padding: 20px 0;
 
-        &:hover{
-         color: var(--purple);
+        &:hover {
+          color: var(--purple);
         }
       }
     }
   }
 
- 
 
-  &.headerScrollActive{
+
+  &.headerScrollActive {
     height: 9rem;
     padding: 1rem;
     position: fixed;
     top: 0;
     width: 100%;
     background: var(--purple);
-    transition:  0.2s linear;
+    transition: 0.2s linear;
     z-index: 100;
 
-    li{
+    li {
       color: #fff;
 
-      &:hover{
+      &:hover {
         color: #FFFD57;
-       }
+      }
     }
 
-    .logo{
+    .logo {
       width: 154px;
     }
   }
@@ -66,23 +67,27 @@ header{
 
 //Responsive - Tablets
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-  header{
+  header {
     background: var(--purple);
     position: absolute;
     width: 100%;
     padding: 1rem;
-    
-    div{
+
+    div {
+      max-width: 560px;
+      display: initial;
       padding: 0 10px;
       flex-direction: column;
 
-      div.logoContainer{
+      div.logoContainer {
         flex-direction: initial;
-        gap: 300px;
+        display: flex;
+        justify-content: space-between;
+        margin-inline: auto;
 
-        button{
+        button {
           display: flex;
           padding: 0.5rem 1rem;
           font-size: 1rem;
@@ -91,7 +96,7 @@ header{
           cursor: pointer;
           gap: 0.5rem;
 
-          span.hamburguer{       
+          span.hamburguer {
             content: '';
             display: block;
             width: 20px;
@@ -100,53 +105,69 @@ header{
           }
 
           span.hamburguer::after,
-          span.hamburguer::before{
+          span.hamburguer::before {
             content: '';
             display: block;
             width: 20px;
             height: 2px;
             background: currentColor;
-            }
+          }
 
-          span.hamburguer::after{
+          span.hamburguer::after {
             margin-top: 3px;
           }
-          span.hamburguer::before{
+
+          span.hamburguer::before {
             margin-top: 5px;
           }
-         }
+        }
 
-        button.active{
+        button.active {
 
-          span.hamburguer{
+          span.hamburguer {
             background: transparent;
           }
-          span.hamburguer::before{
+
+          span.hamburguer::before {
             transform: rotate(135deg);
           }
-          span.hamburguer::after{
+
+          span.hamburguer::after {
             transform: rotate(-135deg);
             margin-top: -2px;
           }
-        } 
+        }
       }
 
-      nav{
+      nav {
         display: none;
         padding: 40px 0;
-        ul{
-          flex-direction: column;
 
-          li:hover{
+        ul {
+          flex-direction: column;
+          text-align: center;
+
+          li:hover {
             color: #fff;
           }
         }
 
-         &.active{
-           display: initial;
-         }
+        &.active {
+          display: initial;
+        }
       }
     }
   }
 }
 
+@media(max-width:481px) {
+  header {
+
+    div {
+      max-width: 320px;
+
+      div.logoContainer {}
+
+    }
+  }
+}
