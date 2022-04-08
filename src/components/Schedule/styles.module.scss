@@ -105,3 +105,52 @@
     margin-inline: auto;
   }
 }
+
+@media(max-width: 480px) {
+
+  div.titleSchedule {
+
+    h2 {
+      font-size: 2.6rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+
+  div.containerSchedule {
+
+    div.containerSwiper {
+
+      div.cardSchedule {
+
+        p {
+          font-size: 1.4rem;
+        }
+
+        div.containerDate {
+
+          div.date {
+            span {
+              font-size: 2rem;
+            }
+          }
+
+          h3 {
+            font-size: 1.8rem;
+          }
+
+        }
+
+        div.containerButton {
+
+          time {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}

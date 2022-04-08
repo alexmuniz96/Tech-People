@@ -32,7 +32,13 @@ export default function Schedule() {
           spaceBetween={50}
           slidesPerView={2}
           breakpoints={{
-            700: {
+            300: {
+              slidesPerView: 1,
+            },
+            400: {
+              slidesPerView: 1,
+            },
+            600: {
               slidesPerView: 1,
             },
             800: {

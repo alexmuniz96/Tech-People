@@ -80,5 +80,17 @@ div.newsContainer {
 @media(max-width:480px) {
   div.newsContainer {
     max-width: 320px;
+
+    div.newsTitle {
+
+      h2 {
+        font-size: 2.6rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+      }
+    }
   }
 }

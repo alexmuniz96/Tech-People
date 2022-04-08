@@ -259,7 +259,6 @@ main {
 @media(max-width: 768px) {
   main {
 
-    padding: 0 10px;
     margin-inline: auto;
 
     section.features {
@@ -290,7 +289,7 @@ main {
   }
 }
 
-@media(max-width:420px) {
+@media(max-width:480px) {
   main {
 
     section.banner {
@@ -330,6 +329,10 @@ main {
       div.cardContainer {
         grid-template-columns: 1fr;
       }
+    }
+
+    section.schedule {
+      max-width: 320px;
     }
   }
 }

@@ -30,3 +30,17 @@
     max-width: 560px;
   }
 }
+
+@media(max-width: 480px) {
+  .footerContainer {
+    max-width: 320px;
+    flex-direction: column;
+    gap: 30px;
+
+    .contentFooter {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
