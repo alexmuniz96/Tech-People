@@ -28,12 +28,15 @@ header {
       gap: 3rem;
 
       li {
-        font-size: 1.7rem;
-        color: var(--black);
-        padding: 20px 0;
 
-        &:hover {
-          color: var(--purple);
+        a {
+          font-size: 1.7rem;
+          color: var(--black);
+          padding: 20px 0;
+
+          &:hover {
+            color: var(--purple);
+          }
         }
       }
     }
@@ -52,10 +55,13 @@ header {
     z-index: 100;
 
     li {
-      color: #fff;
 
-      &:hover {
-        color: #FFFD57;
+      a {
+        color: #fff;
+
+        &:hover {
+          color: #FFFD57;
+        }
       }
     }
 

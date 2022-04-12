@@ -3,7 +3,6 @@ import News from './components/News'
 import Schedule from './components/Schedule'
 import Form from './components/Form'
 import Footer from './components/Footer'
-
 import girlStudent from './images/garota-estudante-sorrindo.png'
 
 import { ReactComponent as ArrowDown } from './svgs/arrow-down.svg'
@@ -14,18 +13,25 @@ import { ReactComponent as Toys } from './svgs/toys.svg'
 import { ReactComponent as TimerOff } from './svgs/timer_off.svg'
 import { ReactComponent as Work } from './svgs/work.svg'
 import './style/global.scss'
+import { useRef } from 'react'
 
 function App() {
+  const buttonRef = useRef()
+
+  function handleClick() {
+    buttonRef.current.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <>
       <Header />
       <main>
 
-        <section className='banner'>
+        <section id='banner' className='banner'>
           <div className='content'>
             <h1>Somos um servidor <span>focado em transição de </span> carreira</h1>
             <p>Temos desafios, lives, eventos, tiramos dúvidas e até achamos uma colocação para você. Quer fazer parte? Clique no botão abaixo:</p>
-            <button>Participar <span> <ArrowDown fill='#37474F' />  </span></button>
+            <button onClick={handleClick}>Participar <span> <ArrowDown fill='#37474F' />  </span></button>
 
           </div>
           <div className='imagesBanner'>
@@ -34,10 +40,10 @@ function App() {
           </div>
         </section>
 
-        <section className='features'>
-          <div className='backgroundFeatures'>
+        <section ref={buttonRef} className='features'>
+          <div id='features' className='backgroundFeatures'>
             <div className='featuresTitle'>
-              <h2> Nosso compromisso</h2>
+              <h2 > Nosso compromisso</h2>
               <p>Temos um compromisso de fazer desafios e gerar avaliações precisas para que você saiba o quanto está evoluíndo. Acreditamos que você merece uma avaliação justa e precisa do seu processo.</p>
             </div>
           </div>
@@ -76,15 +82,15 @@ function App() {
           </div>
         </section>
 
-        <section className='news'>
+        <section id='news' className='news'>
           <News />
         </section>
 
-        <section className='schedule'>
+        <section id='schedule' className='schedule'>
           <Schedule />
         </section>
 
-        <section className='form'>
+        <section id='form' className='form'>
           <Form />
         </section>
 

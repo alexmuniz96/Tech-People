@@ -37,10 +37,10 @@ export default function Header() {
 
         <nav className={isNavVisible ? 'active' : ''} >
           <ul>
-            <li><a>Home</a> </li>
-            <li><a>Compromisso</a> </li>
-            <li><a>Notícias</a></li>
-            <li><a>Agenda</a></li>
+            <li><a href="#banner">Home</a> </li>
+            <li><a href="#features">Compromisso</a> </li>
+            <li><a href="#news">Notícias</a></li>
+            <li><a href="#schedule">Agenda</a></li>
           </ul>
         </nav>
 
