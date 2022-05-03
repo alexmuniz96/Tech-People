@@ -49,71 +49,79 @@ export default function Schedule() {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide className={styles.cardSchedule}>
-            <div className={styles.containerDate}>
-              <div className={styles.date}>
-                <span> 20 </span>
-                <span>Jan</span>
+            <a href='https://www.sympla.com.br/eventos?s=javascript&tab=eventos'>
+              <div className={styles.containerDate}>
+                <div className={styles.date}>
+                  <span> 20 </span>
+                  <span>Jan</span>
+                </div>
+                <h3>Live: Iniciando com Nuxt por Mateus Ávila Isidoro</h3>
               </div>
-              <h3>Live: Iniciando com Nuxt por Mateus Ávila Isidoro</h3>
-            </div>
-            <p>
-              Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. Iure et consectetur
-            </p>
-            <div className={styles.containerButton}>
-              <button>Participar  <ArrowRight /> </button>
-              <time> <Time /> 19:00 - 22:00  </time>
-            </div>
+              <p>
+                Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. Iure et consectetur
+              </p>
+              <div className={styles.containerButton}>
+                <button>Participar  <ArrowRight /> </button>
+                <time> <Time /> 19:00 - 22:00  </time>
+              </div>
+            </a>
           </SwiperSlide>
 
           <SwiperSlide className={styles.cardSchedule}>
-            <div className={styles.containerDate}>
-              <div className={styles.date}>
-                <span> 20 </span>
-                <span>Jan</span>
+            <a href='https://www.sympla.com.br/eventos?s=javascript&tab=eventos'>
+              <div className={styles.containerDate}>
+                <div className={styles.date}>
+                  <span> 20 </span>
+                  <span>Jan</span>
+                </div>
+                <h3>Live: Iniciando com Nuxt por Mateus Ávila Isidoro</h3>
               </div>
-              <h3>Live: Iniciando com Nuxt por Mateus Ávila Isidoro</h3>
-            </div>
-            <p>
-              Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. Iure et consectetur
-            </p>
-            <div className={styles.containerButton}>
-              <button>Participar  <ArrowRight /> </button>
-              <time> <Time /> 19:00 - 22:00  </time>
-            </div>
+              <p>
+                Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. Iure et consectetur
+              </p>
+              <div className={styles.containerButton}>
+                <button>Participar  <ArrowRight /> </button>
+                <time> <Time /> 19:00 - 22:00  </time>
+              </div>
+            </a>
           </SwiperSlide>
 
           <SwiperSlide className={styles.cardSchedule}>
-            <div className={styles.containerDate}>
-              <div className={styles.date}>
-                <span> 20 </span>
-                <span>Jan</span>
+            <a href='https://www.sympla.com.br/eventos?s=javascript&tab=eventos'>
+              <div className={styles.containerDate}>
+                <div className={styles.date}>
+                  <span> 20 </span>
+                  <span>Jan</span>
+                </div>
+                <h3>Live: Iniciando com Nuxt por Mateus Ávila Isidoro</h3>
               </div>
-              <h3>Live: Iniciando com Nuxt por Mateus Ávila Isidoro</h3>
-            </div>
-            <p>
-              Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. Iure et consectetur
-            </p>
-            <div className={styles.containerButton}>
-              <button>Participar  <ArrowRight /> </button>
-              <time> <Time /> 19:00 - 22:00  </time>
-            </div>
+              <p>
+                Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. Iure et consectetur
+              </p>
+              <div className={styles.containerButton}>
+                <button>Participar  <ArrowRight /> </button>
+                <time> <Time /> 19:00 - 22:00  </time>
+              </div>
+            </a>
           </SwiperSlide>
 
           <SwiperSlide className={styles.cardSchedule}>
-            <div className={styles.containerDate}>
-              <div className={styles.date}>
-                <span> 20 </span>
-                <span>Jan</span>
+            <a href='https://www.sympla.com.br/eventos?s=javascript&tab=eventos'>
+              <div className={styles.containerDate}>
+                <div className={styles.date}>
+                  <span> 20 </span>
+                  <span>Jan</span>
+                </div>
+                <h3>Live: Iniciando com Nuxt por Mateus Ávila Isidoro</h3>
               </div>
-              <h3>Live: Iniciando com Nuxt por Mateus Ávila Isidoro</h3>
-            </div>
-            <p>
-              Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. Iure et consectetur
-            </p>
-            <div className={styles.containerButton}>
-              <button>Participar  <ArrowRight /> </button>
-              <time> <Time /> 19:00 - 22:00  </time>
-            </div>
+              <p>
+                Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. Iure et consectetur
+              </p>
+              <div className={styles.containerButton}>
+                <button>Participar  <ArrowRight /> </button>
+                <time> <Time /> 19:00 - 22:00  </time>
+              </div>
+            </a>
           </SwiperSlide>
 
           <div className={styles.containerPagination}>

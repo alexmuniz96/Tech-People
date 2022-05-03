@@ -17,21 +17,27 @@ export default function News() {
       <div className={styles.containerNews}>
 
         <div className={styles.cardNews}>
-          <img src={newsOne} />
-          <time> <Calendar /> 17 Abr 2020</time>
-          <p>Participe da nossa Live sobre React e testes TDD</p>
+          <a href='https://dev.to/' target='_blank'>
+            <img src={newsOne} />
+            <time> <Calendar /> 17 Abr 2020</time>
+            <p>Participe da nossa Live sobre React e testes TDD</p>
+          </a>
         </div>
 
         <div className={styles.cardNews}>
-          <img src={newsTwo} />
-          <time> <Calendar /> 17 Abr 2020</time>
-          <p>Participe da nossa live de Nuxt para a Turing</p>
+          <a href='https://dev.to/' target='_blank'>
+            <img src={newsTwo} />
+            <time> <Calendar /> 17 Abr 2020</time>
+            <p>Participe da nossa live de Nuxt para a Turing</p>
+          </a>
         </div>
 
         <div className={styles.cardNews}>
-          <img src={newsThree} />
-          <time> <Calendar /> 17 Abr 2020</time>
-          <p>Como apoiar uma desenvolvedora em início de carreira?</p>
+          <a href='https://dev.to/' target='_blank'>
+            <img src={newsThree} />
+            <time> <Calendar /> 17 Abr 2020</time>
+            <p>Como apoiar uma desenvolvedora em início de carreira?</p>
+          </a>
         </div>
       </div>
     </div>
