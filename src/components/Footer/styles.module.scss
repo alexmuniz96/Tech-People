@@ -21,6 +21,21 @@
     display: flex;
     align-items: center;
     gap: 28px;
+
+    .socialFace:hover {
+      transform: scale(1.5);
+      transition: ease 0.3s;
+    }
+
+    .socialTwitter:hover {
+      transform: scale(1.5);
+      transition: ease 0.3s;
+    }
+
+    .socialInsta:hover {
+      transform: scale(2);
+      transition: ease 0.3s;
+    }
   }
 }
 

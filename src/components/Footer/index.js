@@ -4,8 +4,8 @@ import { ReactComponent as Facebook } from '../../svgs/facebook.svg'
 import { ReactComponent as Twitter } from '../../svgs/twitter.svg'
 import { ReactComponent as Instagram } from '../../svgs/instagram.svg'
 
-
 export default function Footer() {
+
   return (
     <div className={styles.footerContainer}>
       <div className={styles.contentFooter}>
@@ -14,9 +14,9 @@ export default function Footer() {
           Todos os direitos reservados</p>
       </div>
       <div className={styles.social}>
-        <a> <Facebook /> </a>
-        <a> <Twitter /> </a>
-        <a> <Instagram /> </a>
+        <a className={styles.socialFace}> <Facebook /> </a>
+        <a className={styles.socialTwitter}>  <Twitter /> </a>
+        <a className={styles.socialInsta}> <Instagram /> </a>
       </div>
     </div>
   )
