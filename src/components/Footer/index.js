@@ -14,9 +14,9 @@ export default function Footer() {
           Todos os direitos reservados</p>
       </div>
       <div className={styles.social}>
-        <a className={styles.socialFace}> <Facebook /> </a>
-        <a className={styles.socialTwitter}>  <Twitter /> </a>
-        <a className={styles.socialInsta}> <Instagram /> </a>
+        <a target='blank' href='https://facebook.com' className={styles.socialFace}> <Facebook /> </a>
+        <a target='blank' href='https://twitter.com' className={styles.socialTwitter}>  <Twitter /> </a>
+        <a target='blank' href='https://instagram.com' className={styles.socialInsta}> <Instagram /> </a>
       </div>
     </div>
   )
