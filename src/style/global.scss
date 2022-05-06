@@ -26,6 +26,19 @@ html {
 
 body {
   margin-inline: 0 auto;
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.3s;
+}
+
+body.light {
+  --background-color: var(--white);
+  --text-color: var(--grey);
+}
+
+body.dark {
+  --background-color: var(--grey);
+  --text-color: var(--white);
 }
 
 body,

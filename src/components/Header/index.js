@@ -1,4 +1,5 @@
 import './styles.scss'
+import DarkMode from '../DarkMode'
 import { ReactComponent as Logo } from '../../svgs/tech-people.svg'
 import { useState } from 'react'
 
@@ -41,6 +42,7 @@ export default function Header() {
             <li><a href="#features">Compromisso</a> </li>
             <li><a href="#news">Notícias</a></li>
             <li><a href="#schedule">Agenda</a></li>
+            <DarkMode />
           </ul>
         </nav>
 
