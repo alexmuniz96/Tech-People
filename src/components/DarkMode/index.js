@@ -1,6 +1,6 @@
 import styles from './styles.scss'
 
-export default function DarkMode() {
+export default function DarkMode({ headerChange }) {
   let clickedClass = 'clicked'
   const body = document.body
   const lightTheme = 'light'
@@ -33,10 +33,11 @@ export default function DarkMode() {
 
   return (
     <button
-      className={theme === 'dark' ? clickedClass : ''}
-      id='darkMode'
+      className={`darkMode ${headerChange ? 'active' : ''}`}
       onClick={(e) => switchTheme(e)}
     >
+
+
     </button>
   )
 }

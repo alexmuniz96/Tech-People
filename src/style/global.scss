@@ -54,6 +54,7 @@ body a {
 }
 
 body.light {
+  --svg-icon: url('../svgs/moon.svg');
   --background-color: var(--pure-white);
   --background-contrast: var(--white);
   --logo-color: var(--pure-black);
@@ -66,6 +67,7 @@ body.light {
 }
 
 body.dark {
+  --svg-icon: url('../svgs/sunny.svg');
   --background-color: var(--dark-background);
   --background-contrast: var(--dark-background-contrast);
   --logo-color: var(white);

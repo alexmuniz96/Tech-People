@@ -1,23 +1,17 @@
-#darkMode {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  background: var(--purple);
+.darkMode {
+  -webkit-mask: var(--svg-icon);
+  mask: var(--svg-icon);
   width: 20px;
   height: 20px;
   border: none;
-  border-radius: 50%;
-  transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
-}
+  transition: background 0.2s ease-in-out;
+  background: var(--links-color);
 
-#darkMode:hover,
-#darkMode:focus {
-  filter: none;
-  background-color: var(--grey);
-  cursor: pointer;
-}
+  &.active {
+    background: var(--white);
+  }
 
-#darkMode.clicked {
-  filter: none !important;
-  background-color: var(--white);
+  &:hover {
+    filter: brightness(0.8);
+  }
 }

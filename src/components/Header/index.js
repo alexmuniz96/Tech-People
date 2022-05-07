@@ -29,7 +29,7 @@ export default function Header() {
     >
       <div>
         <div className='logoContainer'>
-          <Logo className='logo' fill={'white'} />
+          <Logo className={`logo ${headerChange ? 'active' : ''}`} fill='white' />
 
           <button className={isNavVisible ? 'active' : ''} onClick={handleNav}>
             <span className='hamburguer'> </span>
@@ -42,7 +42,7 @@ export default function Header() {
             <li><a href="#features">Compromisso</a> </li>
             <li><a href="#news">Notícias</a></li>
             <li><a href="#schedule">Agenda</a></li>
-            <li> <DarkMode /></li>
+            <li> <DarkMode headerChange={headerChange} /></li>
           </ul>
         </nav>
 

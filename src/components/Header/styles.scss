@@ -20,6 +20,10 @@ header {
         & path {
           fill: var(--logo-color);
         }
+
+        &.active path {
+          fill: var(--white);
+        }
       }
 
       button {
@@ -174,9 +178,6 @@ header {
 
     div {
       max-width: 320px;
-
-      div.logoContainer {}
-
     }
   }
 }
