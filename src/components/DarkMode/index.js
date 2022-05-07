@@ -21,12 +21,12 @@ export default function DarkMode() {
     if (theme === darkTheme) {
       body.classList.replace(darkTheme, lightTheme)
       e.target.classList.remove(clickedClass)
-      localStorage.setItem('thme', 'light')
+      localStorage.setItem('theme', 'light')
       theme = lightTheme
     } else {
       body.classList.replace(lightTheme, darkTheme)
       e.target.classList.add(clickedClass)
-      localStorage.setItem('thme', 'dark')
+      localStorage.setItem('theme', 'dark')
       theme = darkTheme
     }
   }

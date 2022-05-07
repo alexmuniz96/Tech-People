@@ -1,9 +1,10 @@
 #darkMode {
-  background: red;
-  background-size: 30px 30px;
-  width: 45px;
-  height: 45px;
-  filter: grayscale(100%);
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background: var(--purple);
+  width: 20px;
+  height: 20px;
   border: none;
   border-radius: 50%;
   transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
@@ -12,11 +13,11 @@
 #darkMode:hover,
 #darkMode:focus {
   filter: none;
-  background-color: rgb(226, 141, 141);
+  background-color: var(--grey);
   cursor: pointer;
 }
 
 #darkMode.clicked {
   filter: none !important;
-  background-color: black;
+  background-color: var(--white);
 }

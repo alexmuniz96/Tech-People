@@ -62,7 +62,7 @@ export default function Schedule() {
               </p>
               <div className={styles.containerButton}>
                 <button>Participar  <ArrowRight /> </button>
-                <time> <Time /> 19:00 - 22:00  </time>
+                <time> <Time className={styles.timer} /> 19:00 - 22:00  </time>
               </div>
             </a>
           </SwiperSlide>
@@ -81,7 +81,7 @@ export default function Schedule() {
               </p>
               <div className={styles.containerButton}>
                 <button>Participar  <ArrowRight /> </button>
-                <time> <Time /> 19:00 - 22:00  </time>
+                <time> <Time className={styles.timer} /> 19:00 - 22:00  </time>
               </div>
             </a>
           </SwiperSlide>
@@ -100,7 +100,7 @@ export default function Schedule() {
               </p>
               <div className={styles.containerButton}>
                 <button>Participar  <ArrowRight /> </button>
-                <time> <Time /> 19:00 - 22:00  </time>
+                <time> <Time className={styles.timer} /> 19:00 - 22:00  </time>
               </div>
             </a>
           </SwiperSlide>
@@ -119,7 +119,7 @@ export default function Schedule() {
               </p>
               <div className={styles.containerButton}>
                 <button>Participar  <ArrowRight /> </button>
-                <time> <Time /> 19:00 - 22:00  </time>
+                <time> <Time className={styles.timer} /> 19:00 - 22:00  </time>
               </div>
             </a>
           </SwiperSlide>

@@ -7,8 +7,14 @@
   --green: #70CE88;
   --green2: #27AE60;
   --grey: #7D7D7D;
+  --dark-background: #15162b;
+  --dark-background-contrast: #0e0e28;
+  --pure-black: #000;
   --black: #373737;
-  --white: #FAFAFA
+  --pure-white: #FFF;
+  --white: #FAFAFA;
+  --shadow-light: 0px 0px 77px rgba(0, 0, 0, 0.05);
+  --shadow-dark: 0px 0px 77px rgb(129 129 129 / 3%);
 }
 
 * {
@@ -27,18 +33,48 @@ html {
 body {
   margin-inline: 0 auto;
   background: var(--background-color);
-  color: var(--text-color);
   transition: background 0.3s;
 }
 
+body h1 {
+  color: var(--title-color);
+}
+
+body h2,
+body h3 {
+  color: var(--titles-color);
+}
+
+body p {
+  color: var(--text-color);
+}
+
+body a {
+  color: var(--links-color)
+}
+
 body.light {
-  --background-color: var(--white);
+  --background-color: var(--pure-white);
+  --background-contrast: var(--white);
+  --logo-color: var(--pure-black);
   --text-color: var(--grey);
+  --title-color: var(--pure-black);
+  --titles-color: var(--black);
+  --links-color: var(--grey);
+  --box-shadow: var(--shadow-light);
+  --time-color: var(--grey)
 }
 
 body.dark {
-  --background-color: var(--grey);
-  --text-color: var(--white);
+  --background-color: var(--dark-background);
+  --background-contrast: var(--dark-background-contrast);
+  --logo-color: var(white);
+  --text-color: var(--pure-white);
+  --title-color: var(--pure-white);
+  --titles-color: var(--purple);
+  --links-color: var(--white);
+  --box-shadow: var(--shadow-dark);
+  --time-color: var(--purple)
 }
 
 body,
@@ -85,7 +121,6 @@ main {
         font-size: 2.2rem;
         font-weight: 500;
         line-height: 3.8rem;
-        color: var(--grey);
         padding: 3rem 0;
       }
 
@@ -128,14 +163,15 @@ main {
   section.features {
     padding: 0 20px;
     width: 100%;
-    // background: #fff;
+
 
     div.backgroundFeatures {
       margin: -30px auto 0 auto;
       transform: skewY(-5deg);
       text-align: center;
-      background: #fff;
-      z-index: -2;
+      background: var(--background-color);
+      transition: background 0.3s;
+
 
       div.featuresTitle {
         padding: 6rem 0 1rem 0;
@@ -149,7 +185,6 @@ main {
         p {
           font-size: 2.2rem;
           line-height: 3.8rem;
-          color: var(--grey)
         }
       }
     }
@@ -165,7 +200,7 @@ main {
         padding: 30px;
         max-width: 344px;
         border-radius: 15px;
-        box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.05);
+        box-shadow: var(--box-shadow);
 
         span {
           display: flex;
@@ -215,7 +250,6 @@ main {
         p {
           font-size: 1.6rem;
           line-height: 2.8rem;
-          color: var(--grey);
           margin-top: 1rem;
         }
       }
@@ -224,7 +258,7 @@ main {
 
   section.news {
     padding: 0 20px;
-    background: var(--white);
+    background: var(--background-contrast);
     max-width: 100%;
   }
 
@@ -241,7 +275,7 @@ main {
 
   section.form {
     padding: 0 20px;
-    background: var(--white);
+    background: var(--background-contrast);
     max-width: 100%;
     margin-top: 80px;
   }
@@ -301,9 +335,6 @@ main {
         }
       }
     }
-
-    section.news {}
-
   }
 }
 
