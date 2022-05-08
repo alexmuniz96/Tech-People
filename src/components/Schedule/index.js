@@ -45,8 +45,6 @@ export default function Schedule() {
               sliderPerView: 2,
             },
           }}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide className={styles.cardSchedule}>
             <a href='https://www.sympla.com.br/eventos?s=javascript&tab=eventos'>
