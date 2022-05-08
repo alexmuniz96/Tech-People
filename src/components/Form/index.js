@@ -15,11 +15,11 @@ export default function Form() {
   const [loading, setLoading] = useState(false)
   const [formSucess, setFormSucess] = useState(false)
 
-  function validateCep(cep) {
-    if (cep === 0) {
+  function validateEmail(email) {
+    if (email === 0) {
       setErrorStyle('inputError')
       return false
-    } else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(cep)) {
+    } else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
       setErrorStyle('inputError')
       return false
     } else {
@@ -29,8 +29,9 @@ export default function Form() {
   }
 
   function handleBlur({ target }) {
-    validateCep(target.value)
+    validateEmail(target.value)
   }
+
 
   function handleChange({ target }) {
     const { id, value } = target
@@ -41,6 +42,7 @@ export default function Form() {
     e.preventDefault()
     setLoading(true)
     await api.post('/form', form)
+    console.log(form)
     setLoading(false)
     setFormSucess(true)
   }
@@ -72,6 +74,7 @@ export default function Form() {
             value={form.name}
             placeholder="Nome Completo"
             onChange={handleChange}
+            onBlur={handleBlur}
           />
           <input
             required

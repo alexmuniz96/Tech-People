@@ -5,19 +5,19 @@ import App from './App';
 
 createServer({
   models: {
-    transaction: Model,
+    form: Model,
   },
 
   routes() {
     this.namespace = 'api'
 
     this.get('/form', () => {
-      return this.schema.all('transaction')
+      return this.schema.all('form')
     })
 
     this.post('/form', (schema, request) => {
       const data = JSON.parse(request.requestBody)
-      return schema.create('transaction', data)
+      return schema.create('form', data)
     })
 
   }
