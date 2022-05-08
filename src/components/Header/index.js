@@ -31,9 +31,14 @@ export default function Header() {
         <div className='logoContainer'>
           <Logo className={`logo ${headerChange ? 'active' : ''}`} fill='white' />
 
-          <button className={isNavVisible ? 'active' : ''} onClick={handleNav}>
-            <span className='hamburguer'> </span>
-          </button>
+          <div className='buttons'>
+            <button className={`mobile ${isNavVisible ? 'active' : ''}`} onClick={handleNav}>
+              <span className='hamburguer'> </span>
+            </button>
+
+            <DarkMode />
+          </div>
+
         </div>
 
         <nav className={isNavVisible ? 'active' : ''} >

@@ -64,10 +64,10 @@ header {
     li {
 
       a {
-        color: #fff;
+        color: var(--pure-white);
 
         &:hover {
-          color: #FFFD57;
+          color: var(--yellow);
         }
       }
     }
@@ -95,61 +95,77 @@ header {
       flex-direction: column;
 
       div.logoContainer {
-        flex-direction: initial;
         display: flex;
+        flex-direction: initial;
+        align-items: center;
         justify-content: space-between;
         margin-inline: auto;
 
-        button {
+        .buttons {
           display: flex;
-          padding: 0.5rem 1rem;
-          font-size: 1rem;
-          border: none;
-          background: none;
-          cursor: pointer;
-          gap: 0.5rem;
+          align-items: center;
+          flex-direction: row;
+          margin: 0;
+          padding: 0;
+          gap: 10px;
 
-          span.hamburguer {
-            content: '';
-            display: block;
-            width: 20px;
-            height: 2px;
-            background: currentColor;
+          button.mobile {
+            display: flex;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            gap: 0.5rem;
+
+            span.hamburguer {
+              content: '';
+              display: block;
+              width: 20px;
+              height: 2px;
+              background: currentColor;
+            }
+
+            span.hamburguer::after,
+            span.hamburguer::before {
+              content: '';
+              display: block;
+              width: 20px;
+              height: 2px;
+              background: currentColor;
+            }
+
+            span.hamburguer::after {
+              margin-top: 3px;
+            }
+
+            span.hamburguer::before {
+              margin-top: 5px;
+            }
           }
 
-          span.hamburguer::after,
-          span.hamburguer::before {
-            content: '';
-            display: block;
-            width: 20px;
-            height: 2px;
-            background: currentColor;
+          button.active {
+
+            span.hamburguer {
+              background: transparent;
+            }
+
+            span.hamburguer::before {
+              transform: rotate(135deg);
+            }
+
+            span.hamburguer::after {
+              transform: rotate(-135deg);
+              margin-top: -2px;
+            }
           }
 
-          span.hamburguer::after {
-            margin-top: 3px;
-          }
-
-          span.hamburguer::before {
-            margin-top: 5px;
+          button.darkMode {
+            display: flex;
+            margin-top: 8px;
           }
         }
 
-        button.active {
-
-          span.hamburguer {
-            background: transparent;
-          }
-
-          span.hamburguer::before {
-            transform: rotate(135deg);
-          }
-
-          span.hamburguer::after {
-            transform: rotate(-135deg);
-            margin-top: -2px;
-          }
-        }
       }
 
       nav {
@@ -160,8 +176,19 @@ header {
           flex-direction: column;
           text-align: center;
 
-          li:hover {
-            color: #fff;
+          li {
+
+            a {
+              color: var(--pure-white);
+            }
+
+            a:hover {
+              color: var(--yellow);
+            }
+
+            .darkMode {
+              display: none;
+            }
           }
         }
 
